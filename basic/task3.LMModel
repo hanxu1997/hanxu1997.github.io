@@ -1,0 +1,231 @@
+<LMModel Align="68" DisplayFlags="0" LineColor="#000000" FillStyle="none" LineWidth="1" FontUnderline="0" FillColor="#ffffff" LineStyle="Solid" FontColor="#000000" FontPointSize="9" BackgroundColor="#ffffff" FontBold="0" BackgroundImagePlacement="0" FontItalic="0" ModificationDate="2018-04-30T00:46:27" TextFlag="2048" CreationDate="2018-04-29T23:39:59" BackgroundType="0" FontStrikeOut="0" Name="Task3" BackgroundStyle="none" Version="2.2" NextOID="29" FontFamily="Arial" >
+ <LMEntityNormal width="153" x="101" TextField="2" Align="68" y="226" LineColor="#000000" FillStyle="Solid" LineWidth="1" Generate="1" FontUnderline="0" FillColor="#6bcc82" LineStyle="Solid" FontColor="#000000" FontPointSize="9" OID="1" height="104" DefaultsLoaded="1" FontBold="0" FontItalic="0" TextFlag="2048" FontStrikeOut="0" Name="Traveler" NextOID="8" FontFamily="Arial" >
+  <sink x="0.588235" y="0.971154" OID="7" />
+  <sink x="0.96732" y="0.480769" OID="6" />
+  <sink x="0.48366" y="0.00961538" OID="5" />
+  <LMAttribute OID="1" Identifier="1" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="2" Name="Traveler_Id" />
+  </LMAttribute>
+  <LMAttribute OID="2" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="3" Name="TravelerName" />
+  </LMAttribute>
+  <LMAttribute OID="3" >
+   <Uses Class="LMDataItem" Path="4" Name="EmailAdress" />
+  </LMAttribute>
+  <LMIdentifier Primary="1" OID="4" Name="tid" >
+   <Uses Class="LMAttribute" Path="1,1" Name="Traveler_Id" />
+  </LMIdentifier>
+ </LMEntityNormal>
+ <LMEntityNormal width="159" x="354" TextField="2" Align="68" y="17" LineColor="#000000" FillStyle="Solid" LineWidth="1" Generate="1" FontUnderline="0" FillColor="#9932cc" LineStyle="Solid" FontColor="#000000" FontPointSize="9" OID="7" height="130" DefaultsLoaded="1" FontBold="0" FontItalic="0" TextFlag="2048" FontStrikeOut="0" Name="Room" NextOID="7" FontFamily="Arial" >
+  <sink x="0.497006" y="0.960396" OID="5" />
+  <LMAttribute OID="1" Identifier="1" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="5" Name="Room_Id" />
+  </LMAttribute>
+  <LMAttribute OID="2" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="6" Name="RoomType" />
+  </LMAttribute>
+  <LMAttribute OID="3" >
+   <Uses Class="LMDataItem" Path="8" Name="Price" />
+  </LMAttribute>
+  <LMAttribute OID="6" >
+   <Uses Class="LMDataItem" Path="20" Name="" />
+  </LMAttribute>
+  <LMIdentifier Primary="1" OID="4" Name="rid" >
+   <Uses Class="LMAttribute" Path="7,1" Name="Room_Id" />
+  </LMIdentifier>
+ </LMEntityNormal>
+ <LMEntityNormal width="154" x="110" TextField="2" Align="68" y="58" LineColor="#000000" FillStyle="Solid" LineWidth="1" Generate="1" FontUnderline="0" FillColor="#9932cc" LineStyle="Solid" FontColor="#000000" FontPointSize="9" OID="9" height="81" DefaultsLoaded="1" FontBold="0" FontItalic="0" TextFlag="2048" FontStrikeOut="0" Name="CreditCard" NextOID="5" FontFamily="Arial" >
+  <sink x="0.487013" y="0.876543" OID="4" />
+  <LMAttribute OID="1" Identifier="1" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="10" Name="Card_Id" />
+  </LMAttribute>
+  <LMAttribute OID="2" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="11" Name="CardType" />
+  </LMAttribute>
+  <LMIdentifier Primary="1" OID="3" Name="cid" >
+   <Uses Class="LMAttribute" Path="9,1" Name="Card_Id" />
+  </LMIdentifier>
+ </LMEntityNormal>
+ <LMRelationship BeginCardinality="1,1" BeginOrdinality="1" TextField="2" Align="68" LineColor="#000000" FillStyle="Solid" LineWidth="1" EndArrowDirection="1072693248" EndArrowFlags="5" Generate="1" EndArrowType="3" FontUnderline="0" FillColor="#ffffff" LineStyle="Solid" FontColor="#000000" FontPointSize="9" OID="12" BeginArrowDirection="0" DefaultsLoaded="1" BeginArrowType="3" FontBold="0" Dominant="0" FontItalic="0" EndTruncate="1" TextFlag="2048" FontStrikeOut="0" Name="traveler_creditcard" EndCardinality="0,n" BeginTruncate="1" BeginArrowFlags="2" NextOID="6" Dependent="0" FontFamily="Arial" >
+  <point x="175" y="227" OID="1" SinkObjectOID="1" SinkOID="5" />
+  <point x="185" y="129" OID="2" SinkObjectOID="9" SinkOID="4" />
+  <TextHandle x="0.45" y="0.5" OID="3" />
+  <BeginRoleHandle x="10" y="10" OID="4" />
+  <EndRoleHandle x="10" y="10" OID="5" />
+ </LMRelationship>
+ <LMEntityNormal width="164" x="373" TextField="2" Align="68" y="211" LineColor="#000000" FillStyle="Solid" LineWidth="1" Generate="1" FontUnderline="0" FillColor="#9932cc" LineStyle="Solid" FontColor="#000000" FontPointSize="9" OID="13" height="107" DefaultsLoaded="1" FontBold="0" FontItalic="0" TextFlag="2048" FontStrikeOut="0" Name="Hotel" NextOID="8" FontFamily="Arial" >
+  <sink x="0.365854" y="0.962617" OID="7" />
+  <sink x="0.47561" y="0.0186916" OID="6" />
+  <sink x="0.00609756" y="0.587629" OID="5" />
+  <LMAttribute OID="1" Identifier="1" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="14" Name="Hotel_Id" />
+  </LMAttribute>
+  <LMAttribute OID="2" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="15" Name="Location" />
+  </LMAttribute>
+  <LMAttribute OID="3" Identifier="1" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="16" Name="HotelName" />
+  </LMAttribute>
+  <LMIdentifier Primary="1" OID="4" Name="hid" >
+   <Uses Class="LMAttribute" Path="13,1" Name="Hotel_Id" />
+  </LMIdentifier>
+ </LMEntityNormal>
+ <LMRelationship BeginCardinality="1,1" TextField="2" Align="68" LineColor="#000000" FillStyle="Solid" LineWidth="1" EndArrowDirection="1072693248" EndArrowFlags="5" Generate="1" EndArrowType="3" FontUnderline="0" FillColor="#ffffff" LineStyle="Solid" FontColor="#000000" FontPointSize="9" OID="17" BeginArrowDirection="0" DefaultsLoaded="1" BeginArrowType="3" FontBold="0" Dominant="0" FontItalic="0" EndTruncate="1" TextFlag="2048" FontStrikeOut="0" Name="traveler_hotel" EndCardinality="0,n" BeginTruncate="1" BeginArrowFlags="6" NextOID="6" Dependent="0" FontFamily="Arial" >
+  <point x="249" y="276" OID="1" SinkObjectOID="1" SinkOID="6" />
+  <point x="374" y="274" OID="2" SinkObjectOID="13" SinkOID="5" />
+  <TextHandle x="0.45" y="0.5" OID="3" />
+  <BeginRoleHandle x="10" y="10" OID="4" />
+  <EndRoleHandle x="-27" y="3" OID="5" />
+ </LMRelationship>
+ <LMRelationship BeginCardinality="1,1" TextField="2" Align="68" LineColor="#000000" FillStyle="Solid" LineWidth="1" EndArrowDirection="0" EndArrowFlags="5" Generate="1" EndArrowType="3" FontUnderline="0" FillColor="#ffffff" LineStyle="Solid" FontColor="#000000" FontPointSize="9" OID="18" BeginArrowDirection="0" DefaultsLoaded="1" BeginArrowType="3" FontBold="0" Dominant="0" FontItalic="0" EndTruncate="1" TextFlag="2048" FontStrikeOut="0" Name="hotel_room" EndCardinality="0,n" BeginTruncate="1" BeginArrowFlags="6" NextOID="6" Dependent="0" FontFamily="Arial" >
+  <point x="451" y="213" OID="1" SinkObjectOID="13" SinkOID="6" />
+  <point x="433" y="141" OID="2" SinkObjectOID="7" SinkOID="5" />
+  <TextHandle x="0.45" y="0.5" OID="3" />
+  <BeginRoleHandle x="10" y="10" OID="4" />
+  <EndRoleHandle x="10" y="10" OID="5" />
+ </LMRelationship>
+ <LMEntityNormal width="152" x="326" TextField="2" Align="68" y="366" LineColor="#000000" FillStyle="Solid" LineWidth="1" Generate="1" FontUnderline="0" FillColor="#9932cc" LineStyle="Solid" FontColor="#000000" FontPointSize="9" OID="22" height="147" DefaultsLoaded="1" FontBold="0" FontItalic="0" TextFlag="2048" FontStrikeOut="0" Name="Reservation" NextOID="9" FontFamily="Arial" >
+  <sink x="0.677632" y="0.0136054" OID="1" />
+  <sink x="0.00657895" y="0.408163" OID="2" />
+  <LMAttribute OID="3" Identifier="1" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="24" Name="Reservation_Id" />
+  </LMAttribute>
+  <LMAttribute OID="4" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="14" Name="Hotel_Id" />
+  </LMAttribute>
+  <LMAttribute OID="5" >
+   <Uses Class="LMDataItem" Path="23" Name="InData" />
+  </LMAttribute>
+  <LMAttribute OID="6" >
+   <Uses Class="LMDataItem" Path="25" Name="OutData" />
+  </LMAttribute>
+  <LMAttribute OID="7" >
+   <Uses Class="LMDataItem" Path="26" Name="TotalPrice" />
+  </LMAttribute>
+  <LMIdentifier Primary="0" OID="8" Name="rid" >
+   <Uses Class="LMAttribute" Path="22,3" Name="Reservation_Id" />
+  </LMIdentifier>
+ </LMEntityNormal>
+ <LMRelationship BeginCardinality="1,1" TextField="2" Align="68" LineColor="#000000" FillStyle="Solid" LineWidth="1" EndArrowDirection="1072693248" EndArrowFlags="5" Generate="1" EndArrowType="3" FontUnderline="0" FillColor="#ffffff" LineStyle="Solid" FontColor="#000000" FontPointSize="9" OID="27" BeginArrowDirection="0" DefaultsLoaded="1" BeginArrowType="3" FontBold="0" Dominant="0" FontItalic="0" EndTruncate="1" TextFlag="2048" FontStrikeOut="0" Name="traveler_reservation" EndCardinality="0,n" BeginTruncate="1" BeginArrowFlags="6" NextOID="6" Dependent="0" FontFamily="Arial" >
+  <point x="191" y="327" OID="1" SinkObjectOID="1" SinkOID="7" />
+  <point x="327" y="426" OID="2" SinkObjectOID="22" SinkOID="2" />
+  <TextHandle x="0.45" y="0.5" OID="3" />
+  <BeginRoleHandle x="10" y="10" OID="4" />
+  <EndRoleHandle x="10" y="10" OID="5" />
+ </LMRelationship>
+ <LMRelationship BeginCardinality="1,1" TextField="2" Align="68" LineColor="#000000" FillStyle="Solid" LineWidth="1" EndArrowDirection="0" EndArrowFlags="5" Generate="1" EndArrowType="3" FontUnderline="0" FillColor="#ffffff" LineStyle="Solid" FontColor="#000000" FontPointSize="9" OID="28" BeginArrowDirection="0" DefaultsLoaded="1" BeginArrowType="3" FontBold="0" Dominant="0" FontItalic="0" EndTruncate="1" TextFlag="2048" FontStrikeOut="0" Name="reservation_hotel" EndCardinality="1,n" BeginTruncate="1" BeginArrowFlags="6" NextOID="6" Dependent="0" FontFamily="Arial" >
+  <point x="429" y="368" OID="1" SinkObjectOID="22" SinkOID="1" />
+  <point x="433" y="314" OID="2" SinkObjectOID="13" SinkOID="7" />
+  <TextHandle x="0.45" y="0.5" OID="3" />
+  <BeginRoleHandle x="10" y="10" OID="4" />
+  <EndRoleHandle x="10" y="10" OID="5" />
+ </LMRelationship>
+ <Validation>
+  <Rule Name="Model name missing" Value="Error" />
+  <Rule Name="Model comment missing" Value="Warning" />
+  <Rule Name="Model description missing" Value="Information" />
+  <Rule Name="Model author missing" Value="Warning" />
+  <Rule Name="Rule name missing" Value="Error" />
+  <Rule Name="Rule code missing" Value="Warning" />
+  <Rule Name="Rule comment missing" Value="Warning" />
+  <Rule Name="Rule description missing" Value="Information" />
+  <Rule Name="Rule name duplicate" Value="Error" />
+  <Rule Name="Rule code duplicate" Value="Error" />
+  <Rule Name="Rule not used" Value="Warning" />
+  <Rule Name="Domain name missing" Value="Error" />
+  <Rule Name="Domain code missing" Value="Warning" />
+  <Rule Name="Domain comment missing" Value="Warning" />
+  <Rule Name="Domain description missing" Value="Information" />
+  <Rule Name="Domain name duplicate" Value="Error" />
+  <Rule Name="Domain code duplicate" Value="Error" />
+  <Rule Name="Domain type missing" Value="Error" />
+  <Rule Name="Domain type unknown" Value="Error" />
+  <Rule Name="Domain not used" Value="Warning" />
+  <Rule Name="Data Item name missing" Value="Error" />
+  <Rule Name="Data Item code missing" Value="Warning" />
+  <Rule Name="Data Item comment missing" Value="Warning" />
+  <Rule Name="Data Item description missing" Value="Information" />
+  <Rule Name="Data Item name duplicate" Value="Error" />
+  <Rule Name="Data Item code duplicate" Value="Error" />
+  <Rule Name="Data Item type missing" Value="Error" />
+  <Rule Name="Data Item type unknown" Value="Error" />
+  <Rule Name="Data Item not used" Value="Warning" />
+  <Rule Name="Entity name missing" Value="Error" />
+  <Rule Name="Entity code missing" Value="Warning" />
+  <Rule Name="Entity comment missing" Value="Warning" />
+  <Rule Name="Entity description missing" Value="Information" />
+  <Rule Name="Entity name duplicate" Value="Error" />
+  <Rule Name="Entity code duplicate" Value="Error" />
+  <Rule Name="Entity attribute missing" Value="Error" />
+  <Rule Name="Entity primary identifier missing" Value="Warning" />
+  <Rule Name="Association name missing" Value="Error" />
+  <Rule Name="Association code missing" Value="Warning" />
+  <Rule Name="Association comment missing" Value="Warning" />
+  <Rule Name="Association description missing" Value="Information" />
+  <Rule Name="Association name duplicate" Value="Error" />
+  <Rule Name="Association code duplicate" Value="Error" />
+  <Rule Name="Association link missing" Value="Error" />
+  <Rule Name="Inheritance name missing" Value="Error" />
+  <Rule Name="Inheritance code missing" Value="Warning" />
+  <Rule Name="Inheritance comment missing" Value="Warning" />
+  <Rule Name="Inheritance description missing" Value="Information" />
+  <Rule Name="Inheritance name duplicate" Value="Warning" />
+  <Rule Name="Inheritance code duplicate" Value="Warning" />
+  <Rule Name="Inheritance link missing" Value="Error" />
+  <Rule Name="Relationship name missing" Value="Error" />
+  <Rule Name="Relationship code missing" Value="Warning" />
+  <Rule Name="Relationship comment missing" Value="Warning" />
+  <Rule Name="Relationship description missing" Value="Information" />
+  <Rule Name="Relationship name duplicate" Value="Warning" />
+  <Rule Name="Relationship code duplicate" Value="Warning" />
+  <Rule Name="Relationship child entity missing" Value="Error" />
+  <Rule Name="Relationship parent entity missing" Value="Error" />
+  <Rule Name="Association Link name missing" Value="Error" />
+  <Rule Name="Association Link code missing" Value="Warning" />
+  <Rule Name="Association Link comment missing" Value="Warning" />
+  <Rule Name="Association Link description missing" Value="Information" />
+  <Rule Name="Association Link name duplicate" Value="Warning" />
+  <Rule Name="Association Link code duplicate" Value="Warning" />
+  <Rule Name="Association Link entity missing" Value="Error" />
+  <Rule Name="Association Link association missing" Value="Error" />
+  <Rule Name="Inheritance Link name missing" Value="" />
+  <Rule Name="Inheritance Link code missing" Value="" />
+  <Rule Name="Inheritance Link comment missing" Value="" />
+  <Rule Name="Inheritance Link description missing" Value="" />
+  <Rule Name="Inheritance Link name duplicate" Value="" />
+  <Rule Name="Inheritance Link code duplicate" Value="" />
+  <Rule Name="Inheritance Link entity missing" Value="Error" />
+  <Rule Name="Inheritance Link inheritance missing" Value="Error" />
+  <Rule Name="Attribute name missing" Value="Error" />
+  <Rule Name="Attribute code missing" Value="Warning" />
+  <Rule Name="Attribute comment missing" Value="Warning" />
+  <Rule Name="Attribute description missing" Value="Information" />
+  <Rule Name="Attribute is indentifier but not mandatory" Value="Error" />
+  <Rule Name="Attribute name duplicate" Value="Error" />
+  <Rule Name="Attribute code duplicate" Value="Error" />
+  <Rule Name="Identifier name missing" Value="Error" />
+  <Rule Name="Identifier code missing" Value="Warning" />
+  <Rule Name="Identifier comment missing" Value="Warning" />
+  <Rule Name="Identifier description missing" Value="Information" />
+  <Rule Name="Identifier name duplicate" Value="Error" />
+  <Rule Name="Identifier code duplicate" Value="Error" />
+  <Rule Name="Identifier attribute missing" Value="Error" />
+ </Validation>
+ <LMDataItem DataType="INTEGER" OID="2" Name="Traveler_Id" />
+ <LMDataItem DataType="CHAR" OID="3" Name="TravelerName" />
+ <LMDataItem DataType="CHAR" OID="4" Name="EmailAdress" />
+ <LMDataItem DataType="INTEGER" OID="5" Name="Room_Id" />
+ <LMDataItem DataType="CHAR" OID="6" Name="RoomType" />
+ <LMDataItem DataType="INTEGER" OID="8" Name="Price" />
+ <LMDataItem DataType="INTEGER" OID="10" Name="Card_Id" />
+ <LMDataItem DataType="CHAR" OID="11" Name="CardType" />
+ <LMDataItem DataType="INTEGER" OID="14" Name="Hotel_Id" />
+ <LMDataItem DataType="CHAR" OID="15" Name="Location" />
+ <LMDataItem DataType="CHAR" OID="16" Name="HotelName" />
+ <LMDataItem OID="20" />
+ <LMDataItem DataType="INTEGER" OID="21" Name="Basket_Id" />
+ <LMDataItem DataType="CHAR" OID="23" Name="InData" />
+ <LMDataItem DataType="INTEGER" OID="24" Name="Reservation_Id" />
+ <LMDataItem DataType="CHAR" OID="25" Name="OutData" />
+ <LMDataItem DataType="INTEGER" OID="26" Name="TotalPrice" />
+</LMModel>

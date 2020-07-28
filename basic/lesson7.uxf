@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.1.1">
+  <zoom_level>12</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>456</x>
+      <y>336</y>
+      <w>120</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>E-Traveler
+-
+Name
+EmailAddress</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>804</x>
+      <y>156</y>
+      <w>120</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>E-Room
+-
+RoomType
+Price</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>456</x>
+      <y>180</y>
+      <w>120</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>E-CreditCard
+-
+CardType</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>996</x>
+      <y>456</y>
+      <w>132</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>M-Reservation
+-
+HotelName
+Check in Data
+Check out Data</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>684</x>
+      <y>468</y>
+      <w>168</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>M-ShoppingBasket
+-
+Reservation Records</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>804</x>
+      <y>324</y>
+      <w>120</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>E-Hotel
+-
+Location
+Name
+Information</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>444</x>
+      <y>540</y>
+      <w>120</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>M-Payment
+-
+Form</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>492</x>
+      <y>396</y>
+      <w>84</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*
+pay v</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>564</x>
+      <y>348</y>
+      <w>264</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*
+choose &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>852</x>
+      <y>216</y>
+      <w>84</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*
+has ^</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>492</x>
+      <y>228</y>
+      <w>84</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*
+has ^</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>840</x>
+      <y>468</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*
+contain &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>552</x>
+      <y>396</y>
+      <w>156</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+has v</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0;110.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>552</x>
+      <y>540</y>
+      <w>528</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+secure &gt;</panel_attributes>
+    <additional_attributes>10.0;30.0;420.0;30.0;420.0;10.0</additional_attributes>
+  </element>
+</diagram>
