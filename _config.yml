@@ -21,8 +21,8 @@ RSS: false
 # weibo_username:     hanxu1997
 zhihu_username:     zhaohanxu
 github_username:    hanxu1997
-# facebook_username:  
-# jianshu_username:   
+# facebook_username:
+# jianshu_username:
 #twitter_username:   hanxu1997
 
 
@@ -51,6 +51,7 @@ gems: [jekyll-paginate]
 markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
+  syntax_highlighter: rouge
   syntax_highlighter_opts:
     span:
       line_numbers: false
